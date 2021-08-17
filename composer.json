@@ -1,0 +1,32 @@
+{
+    "name": "mzr/zero",
+    "description": "This is a minimal package for laravel framework",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mian Zadid Rusdid",
+            "email": "rusdid@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Mzr\\Zero\\": "src/"
+        }
+    },
+    "require": {},
+    "require-dev": {
+       
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mzr\\Zero\\Providers\\ZeroServiceProvider"
+            ],
+            "aliases": {
+                "Zero": "Mzr\\Zero\\Facades\\Zero"
+            }
+        }
+    }
+}
